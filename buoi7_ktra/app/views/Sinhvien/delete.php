@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/../layout/header.php'; 
 require_once __DIR__ . '/../../controllers/SinhvienController.php';
-session_start();
-
 // Kiểm tra đăng nhập
 if (!isset($_SESSION['MaSV'])) {
     header("Location: ../../auth/login.php");

@@ -1,7 +1,9 @@
 <?php
 require_once __DIR__ . '/../layout/header.php';
 require_once __DIR__ . '/../../controllers/HocphanController.php';
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 $controller = new HocphanController();
 $hocphans = $controller->index();
 ?>

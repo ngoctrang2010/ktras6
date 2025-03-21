@@ -1,4 +1,6 @@
-
+<?php
+session_start(); // Đảm bảo session được khởi động trước khi sử dụng
+?>
 <!-- Thanh menu -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">

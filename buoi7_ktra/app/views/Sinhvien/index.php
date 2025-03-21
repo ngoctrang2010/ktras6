@@ -5,7 +5,6 @@ require_once __DIR__ . '/../../controllers/SinhvienController.php';
 $controller = new SinhvienController();
 $sinhviens = $controller->index();
 
-session_start();
 if (!isset($_SESSION['MaSV'])) {
     header("Location: ../../auth/login.php");
     exit();
